@@ -1,61 +1,48 @@
-Process Hacker is a powerful free and open source process viewer.
+TRANSLATE INDONESIA
 
-## Getting started
 
-Simply run ProcessHacker.exe to start Process Hacker. There are two
-versions, 32-bit (x86) and 64-bit (x64). If you are not sure which
-version to use, open Control Panel > System and check the "System
-type". You cannot run the 32-bit version of Process Hacker on a
-64-bit system and expect it to work correctly, unlike other programs.
+Process Hacker adalah penampil proses sumber terbuka dan gratis yang kuat. 
 
-## System requirements
+## Mulai Cukup jalankan ProcessHacker.exe untuk memulai Process Hacker. 
+Ada dua versi, 32-bit (x86) dan 64-bit (x64). 
+Jika Anda tidak yakin yang mana versi yang akan digunakan, buka Control Panel > System dan centang "System ketik". 
+Anda tidak dapat menjalankan Peretas Proses versi 32-bit pada a sistem 64-bit dan berharap untuk bekerja dengan benar, 
+tidak seperti program lain. ## Persyaratan sistem Windows 7 atau lebih tinggi, 32-bit atau 64-bit. 
 
-Windows 7 or higher, 32-bit or 64-bit.
 
-## Settings
+## Pengaturan 
+Jika Anda menjalankan Process Hacker dari drive USB, Anda mungkin ingin simpan juga pengaturan Process Hacker di sana. 
+Untuk melakukan ini, buat file kosong bernama "ProcessHacker.exe.settings.xml" di tempat yang sama direktori sebagai ProcessHacker.exe. 
+Anda dapat melakukan ini menggunakan Windows Explorer: 
+1. Pastikan "Sembunyikan ekstensi untuk jenis file yang dikenal" 
+tidak dicentang Alat > Opsi folder > Lihat. 
+2. Klik kanan di folder dan pilih New > Text Document. 
+3. Ganti nama file menjadi ProcessHacker.exe.settings.xml (hapus ".txt" perpanjangan). 
 
-If you are running Process Hacker from a USB drive, you may want to
-save Process Hacker's settings there as well. To do this, create a
-blank file named "ProcessHacker.exe.settings.xml" in the same
-directory as ProcessHacker.exe. You can do this using Windows Explorer:
 
-1. Make sure "Hide extensions for known file types" is unticked in
-   Tools > Folder options > View.
-2. Right-click in the folder and choose New > Text Document.
-3. Rename the file to ProcessHacker.exe.settings.xml (delete the ".txt"
-   extension).
+## Plugin Plugin dapat dikonfigurasi 
+dari Hacker > Plugins. Jika Anda mengalami crash yang melibatkan plugin, 
+pastikan mereka up to date. Plugin ExtendedTools hanya tersedia untuk Windows Vista dan di atas. Informasi Disk 
+dan Jaringan yang disediakan oleh plugin ini adalah hanya tersedia saat menjalankan Process Hacker dengan administratif hak. 
 
-## Plugins
 
-Plugins can be configured from Hacker > Plugins.
+## KProcessHacker Process Hacker 
+menggunakan driver mode kernel, KProcessHacker, untuk membantu dengan fungsi tertentu. Ini termasuk: 
+* Menangkap jejak tumpukan mode kernel 
+* Menangani proses pencacahan lebih efisien 
+* Mengambil nama untuk pegangan file 
+* Mengambil nama untuk objek EtwRegistration 
+* Mengatur atribut pegangan Perhatikan bahwa secara default, KProcessHacker hanya mengizinkan koneksi dari proses dengan SeDebugPrivilege. 
+Untuk mengizinkan Peretas Proses menampilkan detail untuk semua proses saat tidak berjalan sebagai administrator: 
+1. Di Peninjau Suntingan Registri, navigasikan ke: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\KProcessHacker3 
+2. Di bawah kunci ini, buat kunci bernama Parameter jika tidak ada. 
+3. Buat nilai DWORD bernama SecurityLevel dan atur ke 2. 
+Jika Anda tidak menggunakan build resmi, Anda mungkin perlu menyetelnya ke 0. 4. 
+Mulai ulang layanan KProcessHacker3 (sc stop KProcessHacker3, sc mulai KProcessHacker3).
 
-If you experience any crashes involving plugins, make sure they
-are up to date.
+gudluck !
 
-The ExtendedTools plugin is only available for Windows Vista and
-above. Disk and Network information provided by this plugin is
-only available when running Process Hacker with administrative
-rights.
 
-## KProcessHacker
 
-Process Hacker uses a kernel-mode driver, KProcessHacker, to
-assist with certain functionality. This includes:
+teks indonesia
 
-* Capturing kernel-mode stack traces
-* More efficiently enumerating process handles
-* Retrieving names for file handles
-* Retrieving names for EtwRegistration objects
-* Setting handle attributes
-
-Note that by default, KProcessHacker only allows connections from
-processes with SeDebugPrivilege. To allow Process Hacker to show details
-for all processes when it is not running as administrator:
-
-1. In Registry Editor, navigate to:
-   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\KProcessHacker3
-2. Under this key, create a key named Parameters if it does not exist.
-3. Create a DWORD value named SecurityLevel and set it to 2. If you are
-   not using an official build, you may need to set it to 0 instead.
-4. Restart the KProcessHacker3 service (sc stop KProcessHacker3,
-   sc start KProcessHacker3).

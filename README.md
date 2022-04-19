@@ -6,6 +6,10 @@
 
 <img align="left" src="https://raw.githubusercontent.com/processhacker/processhacker/master/ProcessHacker/resources/ProcessHacker.png" width="128" height="128"> 
 
+## Size instalasi 
+size 323 Mb
+
+
 ## Process Hacker
 
 A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
@@ -90,3 +94,16 @@ to show details for all processes when it is not running as administrator:
    not using an official build, you may need to set it to 0 instead.
 4. Restart the KProcessHacker3 service (sc stop KProcessHacker3,
    sc start KProcessHacker3).
+
+
+## TextOn
+
+?style=BY-SURYA-N3&logo=appveyor
+
+
+
+
+## WHOAMI
+
+https://user-images.githubusercontent.com/99640009/163899325-4d29c38c-5bb5-4564-95c8-3cdc44896ae9.mp4
+
