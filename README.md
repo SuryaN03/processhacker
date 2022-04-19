@@ -117,4 +117,4 @@ https://user-images.githubusercontent.com/99640009/163899325-4d29c38c-5bb5-4564-
 
 ## SUPPORT [♡]
 
-[![Donate to MobSF](https://user-images.githubusercontent.com/4301109/117404264-7aab5480-aebe-11eb-9cbd-da82d7346bb3.png)](https://opensecurity.in/donate)
+https://sociabuzz.com/suryan3
